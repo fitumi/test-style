@@ -1,5 +1,5 @@
 before_install:
   - sudo apt-get -qq update
-  - sudo apt-get install -y clang-format
+  - sudo apt-get install -y clang-format-3.6
 
 script: clang-format -i ./src/*.c && git diff-files --quiet
